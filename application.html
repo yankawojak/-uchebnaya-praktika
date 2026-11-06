@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебная заявка — андреева яна</title>
+    <p>Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и не поступает организатору</p>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">обо мне</a></li>
+          <li><a href="hobby.html">мои увлечения</a></li>
+          <li><a href="college.html">мой колледж</a></li>
+          <li><a href="schedule.html">расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+         
+        </ul>
+      </nav>
+    <form action="application.html"method="get">
+        <p>
+            <label for="student">учебное имя</label>
+            <input id="student" name="student" type="text"
+            minlength="2" required>
+        </p>
+        <p>
+            <label for="email">учебная почта</label>
+            <input id="email" name="email" type="email"
+            placeholder="student@gmail.com" required>
+        </p>
+        <p>
+            <label for="phone">телефон из 11 цифр</label>
+            <input id="phone" name="phone" type="tel"
+            pattern="[0-9] {11}" required
+            aria-describedby="phone-help">
+            <small id= "phone-help">без пробелов и знака плюс</small>
+        </p>
+        <p>
+            <label for="20">желаемая дата занятий</label>
+            <input id="date" name="date"type="data" required>
+        </p>
+        <fieldset>
+            <legend>формат занятий</legend>
+            <p><input id="offline" type="radio" name="format"
+            value="offline" required>
+        <label for="offline">в колледже</label></p>
+        <p><input id="online" type="radio" name="format"
+                        value="online">
+                    <label for="online">дистанционно</label></p>
+        </fieldset>
+        <p>
+            <label for="topic">направление</label>
+            <select id="topic" name="topic" required>
+                <option value="">выберите напрнавление</option>
+                <option value="html">HTML</option>
+                <option value="Git">GIT</option>
+                <option value="css">CSS</option> 
+            </select>
+        </p>
+        <p>
+            <input id="reminder" name="reminder" type="checkbox"
+            value="yes">
+        <label for="reminder">добавить учебное напоминание</label>
+        </p>
+        <p>
+            <label for="comment">чему хотите научиться</label>
+            <textarea id="comment" name="comment" rows="4" maxlength="300" required></textarea>
+        </p>
+    
+        <button type="submit">отправить учебный пример</button>
+        <button type="reset">сбросить поля</button>
+    
+    </form>
+</body>
+</html>
