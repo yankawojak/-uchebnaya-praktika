@@ -5,49 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой колледж – Андреева Яна</title>
   </head>
+
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">обо мне</a></li>
-        <li><a href="hobby.html">мои увлечения</a></li>
-        <li><a href="college.html">мой колледж</a></li>
-        <li><a href="schedule.html">расписание</a></li>
-        <li><a href="application.html">заявка</a></li>
+    <header>
+      <p>учебный сайт студента ИС-1-25</p>
+      <nav aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">обо мне</a></li>
+          <li><a href="hobby.html">мои увлечения</a></li>
+          <li><a href="college.html">мой колледж</a></li>
+          <li><a href="schedule.html">расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+          <li><a href="club.html">клуб</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      </ul>
-    </nav>
+    <main>
+      <h1 id="top">мой колледж</h1>
+      <p>
+        чебоксарский экономико-технологический колледж: это место где я учусь.
+      </p>
 
-    <h1>мой колледж</h1>
-    <p>
-      чебоксарский экономико-технологический колледж: это место где я учусь.
-    </p>
+      <figure>
+        <img src="/img/college.jpg" alt="вот как он выглядит" width="300" />
+        <figcaption>рис.1. мой колледж</figcaption>
+      </figure>
 
-    <figure>
-      <img src="img/college.jpg" alt="вот как он выглядит" />
-      <figcaption>рис.1. мой колледж</figcaption>
-    </figure>
-    <h2>моя специальность</h2>
-    <p>
-      информационные системы и программирование (09.02.07):студенты изучают
-      современные технологии программирования, базы данных и методы защиты
-      информации, что позволяет им успешно работать в сфере IT и создавать
-      инновационные решения для различных задач.
-    </p>
-    <h2>чему я учусь</h2>
-    <ul>
-      <li>веб-разработака</li>
-      <li>база данных</li>
-      <li>программирование</li>
-      <li>методы защиты информации</li>
-    </ul>
+      <section aria-labelledby="specialty">
+        <h2 id="specialty">моя специальность</h2>
+        <p>
+          информационные системы и программирование (09.02.07): студенты изучают
+          современные технологии программирования, базы данных и методы защиты
+          информации, что позволяет им успешно работать в сфере IT и создавать
+          инновационные решения для различных задач.
+        </p>
+      </section>
 
-    <p>
-      <a
-        href="https://chetk.info/?ysclid=mw3he2xx3g964803959"
-        target="_blank"
-        rel="noopener noregerrer"
-        >официальный сайт колледжа</a
-      >
-    </p>
+      <section aria-labelledby="learning">
+        <h2 id="learning">чему я учусь</h2>
+        <ul>
+          <li>веб-разработка</li>
+          <li>база данных</li>
+          <li>программирование</li>
+          <li>методы защиты информации</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="links">
+        <h2 id="links">официальные ресурсы</h2>
+        <p>
+          <a
+            href="https://chetk.info/?ysclid=mw3he2xx3g964803959"
+            target="_blank"
+            rel="noopener noreferrer"
+            >официальный сайт колледжа</a
+          >
+        </p>
+      </section>
+
+      <p><a href="#top">Наверх</a></p>
+    </main>
   </body>
 </html>
