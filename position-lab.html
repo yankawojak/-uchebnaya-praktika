@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>лаборатория позиционирования</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <header>
+      <p>учебный сайт студента ИС-1-25</p>
+   <nav class="main-nav" aria-label="главное меню">
+        <ul>
+          <li><a href="index.html">обо мне</a></li>
+          <li><a href="hobby.html">мои увлечения</a></li>
+          <li><a href="college.html">мой колледж</a></li>
+          <li><a href="schedule.html">расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+          <li><a href="club.html">клуб</a></li>
+          <li><a href="catalog.html">каталог</a>
+          <li><a href="flex-lab.html">flex-lab</a>
+          <li><a href="position-lab.html">position-lab</a>
+          <li><a href="grid-lab.html">grid-lab</a>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <h1>лаборатория позиционирования</h1>
+      <p class="lead">исследуем relative, absolute и sticky.</p>
+
+          <nav class="page-tools" aria-label="навигация по лабораторной">
+      <a href="#relative-demo">relative и absolute</a>
+      <a href="#sticky-demo">sticky</a>
+      <a href="#top">наверх</a>
+    </nav>
+
+
+      <section id="relative-demo">
+        <h2>relative и absolute</h2>
+        <div class="position-box">
+          <span class="badge">новинка</span>
+          <h3>учебная карточка</h3>
+          <p>значок размещён относительно этой карточки.</p>
+        </div>
+      </section>
+
+      <section id="sticky-demo" class="long-text">
+        <h2>проверка прокрутки</h2>
+        <p>уменьшите высоту окна и прокрутите страницу.</p>
+        <p>
+          позиционирование в css позволяет точно управлять тем, где именно на
+          странице находится каждый элемент. по умолчанию все блоки идут в
+          обычном потоке документа друг за другом сверху вниз.
+        </p>
+        <p>
+          свойство position: relative оставляет элемент на его привычном месте в
+          потоке, но разрешает сдвигать его с помощью координат top, left, right
+          и bottom. также оно служит точкой отсчета для вложенных абсолютных
+          элементов.
+        </p>
+        <p>
+          при задании position: absolute блок полностью выпадает из обычного
+          потока и перестает занимать место на странице. он привязывается к
+          ближайшему родителю, у которого задано любое позиционирование кроме
+          static.
+        </p>
+        <p>
+          свойство position: sticky работает как гибрид обычного и
+          фиксированного блока. сначала элемент прокручивается вместе со всей
+          страницей, но как только доходит до указанного края экрана, он
+          прилипает к нему.
+        </p>
+        <p>
+          для управления порядком наложения элементов друг на друга используется
+          свойство z-index. оно работает только для позиционированных блоков и
+          определяет, какой слой окажется выше остальных.
+        </p>
+        <p>
+          на практике позиционирование часто применяют для создания липких шапок
+          меню, всплывающих подсказок, значков уведомлений на карточках и кнопок
+          возврата в начало страницы.
+        </p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>автор: андреева яна. учебная практика уп.09.</p>
+    </footer>
+  </body>
+</html>

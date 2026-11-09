@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>каталог учебных направлений</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <header>
+      <p>учебный сайт студента ИС-1-25</p>
+   <nav class="main-nav" aria-label="главное меню">
+        <ul>
+          <li><a href="index.html">обо мне</a></li>
+          <li><a href="hobby.html">мои увлечения</a></li>
+          <li><a href="college.html">мой колледж</a></li>
+          <li><a href="schedule.html">расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+          <li><a href="club.html">клуб</a></li>
+          <li><a href="catalog.html">каталог</a>
+          <li><a href="flex-lab.html">flex-lab</a>
+          <li><a href="position-lab.html">position-lab</a>
+          <li><a href="grid-lab.html">grid-lab</a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>каталог учебных направлений</h1>
+
+      <p class="lead">
+        выберите направление, которое хотите изучать дальше. карточки
+        автоматически перестраиваются в зависимости от ширины окна.
+      </p>
+
+      <div class="catalog-grid">
+        <article class="product-card">
+          <span class="card-badge">новинка</span>
+          <img src="img/html.jpg" alt="html-код на экране редактора" />
+          <h2>html</h2>
+          <p>создание структуры и содержимого веб-страниц.</p>
+          <ul>
+            <li>семантические теги</li>
+            <li>таблицы и формы</li>
+          </ul>
+          <a class="button-link" href="index.html"> открыть пример </a>
+        </article>
+
+        <article class="product-card">
+          <span class="card-badge">выбор</span>
+          <img
+            src="img/css.jpg"
+            alt="пример оформления страницы с помощью css"
+          />
+          <h2>css</h2>
+          <p>
+            оформление страниц, настройка цветов, размеров и расположения
+            элементов.
+          </p>
+          <ul>
+            <li>селекторы и каскад</li>
+            <li>flexbox и grid</li>
+          </ul>
+          <a class="button-link" href="flex-lab.html"> изучить flexbox </a>
+        </article>
+
+        <article class="product-card">
+          <img src="img/git.jpg" alt="история изменений проекта в git" />
+          <h2>git</h2>
+          <p>
+            сохранение истории проекта и совместная работа над исходным кодом.
+          </p>
+          <ul>
+            <li>коммиты и ветки</li>
+            <li>работа с github</li>
+          </ul>
+          <a class="button-link" href="index.html"> посмотреть проект </a>
+        </article>
+      </div>
+      <p class="back-to-top"> 
+  <a href="#top">Наверх</a> 
+</p> 
+    </main>
+
+    <footer class="page-footer">
+      <p>автор: андреева яна. учебная практика уп.09.</p>
+    </footer>
+  </body>
+</html>

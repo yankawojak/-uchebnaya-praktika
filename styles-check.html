@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>проверочная работа по css</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="main-nav" aria-label="главное меню">
+      <ul>
+        <li><a href="index.html">обо мне</a></li>
+        <li><a href="hobby.html">увлечения</a></li>
+        <li><a href="college.html">колледж</a></li>
+        <li><a href="catalog.html">каталог</a></li>
+        <li><a href="flex-lab.html">flexbox</a></li>
+        <li><a href="grid-lab.html">css grid</a></li>
+        <li><a href="position-lab.html">позиционирование</a></li>
+        <li><a href="styles-check.html" aria-current="page">проверка</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>проверочная работа по блочной модели css</h1>
+    <p class="lead">
+      на этой странице проверяется работа контейнера, адаптивных карточек, таблицы, формы и фокуса.
+    </p>
+
+    <section>
+      <h2>адаптивные карточки</h2>
+      <div class="card-list">
+        <article class="card">
+          <h2>карточка 1</h2>
+          <p>первый учебный блок с произвольным текстом для проверки высоты без фиксированных значений.</p>
+          <a href="index.html">перейти на главную</a>
+        </article>
+
+        <article class="card">
+          <h2>карточка 2</h2>
+          <p>второй блок. при сужении окна браузера карточки плавно переносятся на новую строку и не перекрываются.</p>
+          <a href="flex-lab.html">открыть flexbox</a>
+        </article>
+
+        <article class="card">
+          <h2>карточка 3</h2>
+          <p>третий блок с гибкой шириной через свойство flex.</p>
+          <a href="grid-lab.html">открыть css grid</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>проверка таблицы</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>слой box model</th>
+            <th>назначение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>content</td>
+            <td>содержимое элемента (текст или картинка)</td>
+          </tr>
+          <tr>
+            <td>padding</td>
+            <td>внутренний отступ от текста до рамки</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>рамка вокруг блока</td>
+          </tr>
+          <tr>
+            <td>margin</td>
+            <td>внешний пустой отступ до соседних блоков</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>проверка формы и фокуса</h2>
+      <form action="#">
+        <p>
+          <label for="student-name">имя студента</label><br>
+          <input type="text" id="student-name" name="student-name" placeholder="введите имя">
+        </p>
+        <p>
+          <label for="student-comment">комментарий</label><br>
+          <textarea id="student-comment" name="student-comment" rows="3" placeholder="текст комментария"></textarea>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="confirm"> проверка выполнена
+          </label>
+        </p>
+        <button type="submit">проверить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>автор: андреева яна. учебная практика уп.09.</p>
+  </footer>
+</body>
+</html>
