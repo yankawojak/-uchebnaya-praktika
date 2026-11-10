@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>итоговый учебный проект</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <p>учебный сайт студента ИС-1-25</p>
+     <nav class="main-nav" aria-label="главное меню">
+        <ul>
+          <li><a href="index.html">обо мне</a></li>
+          <li><a href="hobby.html">мои увлечения</a></li>
+          <li><a href="college.html">мой колледж</a></li>
+          <li><a href="schedule.html">расписание</a></li>
+          <li><a href="application.html">заявка</a></li>
+          <li><a href="club.html">клуб</a></li>
+          <li><a href="catalog.html">каталог</a></li>
+          <li><a href="flex-lab.html">flex-lab</a></li>
+          <li><a href="position-lab.html">position-lab</a></li>
+          <li><a href="grid-lab.html">grid-lab</a></li>
+          <li><a href="responsive-lab.html">лаборатория адаптивности</a></li>
+          <li><a href="form-style-lab.html">заявка на учебный интенсив</a></li>
+          <li><a href="about-meproject.html" aria-current="page">проект</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top" class="page-container">
+      <section class="project-hero">
+        <div>
+          <p class="eyebrow">итог учебного модуля</p>
+          <h1>мой адаптивный учебный сайт</h1>
+          <p><strong>назначение:</strong></p>
+          <p>
+            демонстрация навыков адаптивной вёрстки, flexbox и css grid в
+            учебном портфолио
+          </p>
+          <p><strong>аудитория:</strong></p>
+          <p>
+            преподаватели практики, проверяющие качество кода, и потенциальные
+            работодатели
+          </p>
+          <a class="button" href="#results">посмотреть результат</a>
+        </div>
+        <img src="img/project.jpg" alt="предпросмотр учебного проекта" />
+      </section>
+
+      <section id="results">
+        <h2>что реализовано</h2>
+        <div class="table-responsive">
+          <table class="project-table">
+            <thead>
+              <tr>
+                <th>технология</th>
+                <th>описание реализации</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>html</strong></td>
+                <td>семантическая структура и доступные элементы.</td>
+              </tr>
+              <tr>
+                <td><strong>css</strong></td>
+                <td>flexbox, grid, position и состояния.</td>
+              </tr>
+              <tr>
+                <td><strong>адаптивность</strong></td>
+                <td>проверка телефона, планшета и компьютера.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>этапы работы</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <p>подготовка структуры и содержания.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <p>создание общего оформления.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <p>адаптация и тестирование.</p>
+          </div>
+        </div>
+      </section>
+
+      <p class="back-to-top"><a href="#top">наверх</a></p>
+    </main>
+
+    <footer class="page-footer">
+        <p>учебная практика УП.09</p>
+    </footer>
+  </body>
+</html>
