@@ -101,7 +101,7 @@ if (score >= 90) {
 
 console.log(`баллов: ${score}, оценка: ${mark}`);
 
-// задача
+// задача 7 
 const dayNumber = 3;
 let dayName;
 
@@ -135,6 +135,37 @@ console.log(`день ${dayNumber}: ${dayName}`);
 
 const isWeekend = dayNumber === 6 || dayNumber === 7;
 console.log('выходной:', isWeekend);
+
+const month = 11;
+let season;
+
+switch (month) {
+  case 12:
+  case 1:
+  case 2:
+    season = 'зима';
+    break;
+  case 3:
+  case 4:
+  case 5:
+    season = 'весна';
+    break;
+  case 6:
+  case 7:
+  case 8:
+    season = 'лето';
+    break;
+  case 9:
+  case 10:
+  case 11:
+    season = 'осень';
+    break;
+  default:
+    season = 'такого месяца нет';
+}
+
+console.log(`месяц ${month}: ${season}`);
+
 
 //задача 8
 for (let i = 1; i <= 10; i++) {
