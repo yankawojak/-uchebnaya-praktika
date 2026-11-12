@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript: события</title>
+  <script src="js/events.js" defer></script>
+</head>
+
+<body>
+  <h1>лаборатория событий javascript</h1>
+
+  <h2>задача 1. кнопка</h2>
+  <button id="hello-btn">нажми меня</button>
+  <p id="hello-result">ожидание...</p>
+
+  <h2>задача 2. счётчик</h2>
+  <p>количество: <span id="counter">0</span></p>
+  <button id="plus-btn">+1</button>
+  <button id="minus-btn">-1</button>
+  <button id="reset-btn">сброс</button>
+
+  <h2>задача 3. приветствие</h2>
+  <input type="text" id="name-input" placeholder="введите имя">
+  <p id="name-result">введите ваше имя</p>
+
+  <h2>задача 4. изменение оформления</h2>
+  <div id="color-box" style="padding: 20px; border: 1px solid black;">
+    <p>это цветной блок.</p>
+    <p id="color-status">цвет выключен</p>
+  </div>
+  <button id="color-btn">изменить цвет</button>
+
+  <h2>задача 5. проверка формы</h2>
+  <form id="feedback-form" novalidate>
+    <input type="text" id="feedback-name" placeholder="ваше имя">
+    <button type="submit">отправить</button>
+  </form>
+  <p id="form-result"></p>
+
+</html>
