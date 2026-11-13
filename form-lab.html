@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>проверка форм</title>
+    <script src="js/form.js" defer></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: arial, sans-serif;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            color: #111111;
+        }
+    
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+    
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #999999;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+    
+        button {
+            padding: 10px 16px;
+            margin-right: 4px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            background-color: #f0f0f0;
+            border: 1px solid #999999;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #e4e4e4;
+        }
+    
+        #registration-form button {
+            border: 2px solid #222222;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+    
+        .error {
+            color: #d93025;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+    
+        .success {
+            color: #188038;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+    
+        body.dark {
+            background-color: #1e1e1e;
+            color: #f1f1f1;
+        }
+    
+        body.dark input {
+            background-color: #2d2d2d;
+            color: #ffffff;
+            border-color: #555555;
+        }
+    
+        body.dark button {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #666666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>регистрация студента</h1>
+
+    <form id="registration-form" novalidate>
+
+        <label for="student-name">имя</label>
+        <input type="text" id="student-name">
+
+        <label for="student-email">email</label>
+        <input type="email" id="student-email">
+
+        <label for="student-password">пароль</label>
+        <input type="password" id="student-password">
+
+        <button type="submit">проверить данные</button>
+
+    </form>
+
+    <p id="result"></p>
+
+    <h2>настройки пользователя</h2>
+
+    <button id="save-name">сохранить имя</button>
+    <button id="show-name">показать имя</button>
+    <button id="delete-name">удалить имя</button>
+
+    <p id="saved-result"></p>
+
+    <label for="student-group">группа</label>
+    <input type="text" id="student-group">
+    <button id="save-group">сохранить группу</button>
+    <button id="show-group">показать группу</button>
+
+    <p id="saved-group-result"></p>
+
+    <h2>тема оформления</h2>
+
+    <button id="theme-btn">переключить тему</button>
+
+</body>
+
+</html>

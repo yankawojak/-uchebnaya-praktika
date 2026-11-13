@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>работа с api</title>
+    <script src="js/api.js" defer></script>
+
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 15px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            background: #f7f7f7;
+        }
+
+        button {
+            padding: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .card {
+            border: 2px solid #4a90e2;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 12px;
+            background: #eef6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>получение данных с сервера</h1>
+
+    <section>
+        <h2>1. работа с json</h2>
+        <div id="json-result"></div>
+    </section>
+
+    <section>
+        <h2>2. первый запрос fetch</h2>
+        <button id="load-post">загрузить запись</button>
+        <div id="post-result"></div>
+    </section>
+
+    <section>
+        <h2>3. список пользователей</h2>
+        <button id="load-users">загрузить пользователей</button>
+        <div id="users-result"></div>
+    </section>
+
+    <section>
+        <h2>4. каталог товаров</h2>
+        <button id="load-products">загрузить товары</button>
+        <div id="products-result"></div>
+    </section>
+
+    
+</body>
+
+</html>
